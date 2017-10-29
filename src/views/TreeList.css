@@ -1,0 +1,21 @@
+/* cfb-editor (C) 2017-present  SheetJS -- http://sheetjs.com */
+.tree {
+	padding: 0px 20px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	white-space: pre;
+	height: calc(100vh - 55px);
+}
+.tree ul {
+	padding: 0px;
+}
+.tree li {
+	list-style-type:none;
+	margin:0;
+	position:relative;
+	font-size: 12px;
+}
+.tree a {
+	padding:10px 5px 0 0px;
+	display:block;
+}

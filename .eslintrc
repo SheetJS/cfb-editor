@@ -1,0 +1,67 @@
+{
+	"parser": "babel-eslint",
+	"env": { "es6": true },
+	"plugins": [ "html", "json", "react", "jsx" ],
+	"extends": "eslint:recommended",
+	"rules": {
+		"comma-style": [ 2, "last" ],
+		"comma-dangle": [ 2, "never" ],
+		"curly": 0,
+		"no-bitwise": 0,
+		"no-console": 0,
+		"no-control-regex": 0,
+		"no-empty": 0,
+		"no-trailing-spaces": 2,
+		"no-use-before-define": [ 1, {
+			"functions":false, "classes":true, "variables":false
+		}],
+		"no-useless-escape": 0,
+		"semi": [ 2, "always" ],
+
+		"react/display-name": 0,
+		"react/jsx-boolean-value": 2,
+		"react/jsx-closing-bracket-location": 0,
+		"react/jsx-curly-spacing": [2, "never"],
+		"react/jsx-indent-props": 0,
+		"react/jsx-max-props-per-line": 0,
+		"react/jsx-no-duplicate-props": 2,
+		"react/jsx-no-literals": 0,
+		"react/jsx-no-undef": 2,
+		"react/jsx-quotes": 0,
+		"react/jsx-sort-prop-types": 0,
+		"react/jsx-sort-props": 0,
+		"react/jsx-uses-react": 2,
+		"react/jsx-uses-vars": 2,
+		"react/no-danger": 0,
+		"react/no-did-mount-set-state": 0,
+		"react/no-did-update-set-state": 2,
+		"react/no-direct-mutation-state": 2,
+		"react/no-multi-comp": 0,
+		"react/no-set-state": 0,
+		"react/no-unknown-property": 2,
+		"react/react-in-jsx-scope": 2,
+		"react/require-extension": 0,
+		"react/self-closing-comp": 2,
+		"react/jsx-wrap-multilines": 2,
+		"react/sort-comp": [2, {
+			"order": [
+				"mixins",
+				"displayName",
+				"defaultProps",
+				"constructor",
+				"getDefaultProps",
+				"getInitialState",
+				"getChildContext",
+				"componentWillMount",
+				"componentDidMount",
+				"componentWillReceiveProps",
+				"shouldComponentUpdate",
+				"componentWillUpdate",
+				"componentDidUpdate",
+				"componentWillUnmount",
+				"everything-else",
+				"render"
+			]
+		}]
+	}
+}

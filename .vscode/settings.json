@@ -1,0 +1,9 @@
+{
+	"search.exclude": {
+		"node_modules/*": true,
+		"dist/*": true,
+		"src/vendor/*": true,
+		"*.map": true,
+		"*.foo": true
+	}
+}

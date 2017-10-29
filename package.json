@@ -1,0 +1,42 @@
+{
+  "name": "cfb-editor",
+  "version": "0.1.0",
+  "description": "CFB / ZIP editor",
+  "private": true,
+  "homepage": "https://sheetjs.com/cfb-editor",
+  "scripts": {
+    "build": "nwb build-react-app",
+    "clean": "nwb clean-app",
+    "start": "nwb serve-react-app",
+    "lint": "eslint --ext js,jsx,html src/",
+    "test:coverage": "nwb test-react --coverage",
+    "test:watch": "nwb test-react --server"
+  },
+  "dependencies": {
+    "cfb": "^1.1.1",
+    "crc-32": "^1.2.0",
+    "file-saver": "^1.3.3",
+    "printj": "^1.1.2",
+    "raw-loader": "^0.5.1",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-easy-state": "^3.0.1",
+    "react-fa": "^5.0.0",
+    "react-markdown": "^2.5.0",
+    "react-router-dom": "^4.2.2",
+    "react-spinkit": "^3.0.0",
+    "react-split-pane": "^0.1.66",
+    "react-syntax-highlighter": "^6.1.1",
+    "react-tippy": "^1.2.2",
+    "sweetalert": "^2.0.8"
+  },
+  "devDependencies": {
+    "nwb": "0.19.x"
+  },
+  "author": "sheetjs",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/SheetJSDev/cfb-editor.git"
+  }
+}

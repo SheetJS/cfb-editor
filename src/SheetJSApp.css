@@ -1,0 +1,14 @@
+/* cfb-editor (C) 2017-present  SheetJS -- http://sheetjs.com */
+.Outer {
+	height: 100%;
+	width: 100%;
+	display: block;
+}
+
+.Bottom {
+	height: calc(100% - 55px);
+}
+.RightPane {
+	height: calc(100vh - 55px);
+	overflow-y: auto;
+}

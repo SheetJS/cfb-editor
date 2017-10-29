@@ -1,0 +1,14 @@
+{
+	"compilerOptions": {
+		"experimentalDecorators": true,
+		"allowJs": true
+	},
+	"include": [
+		"src/**/*"
+	],
+	"exclude": [
+		"src/vendor/*",
+		"node_modules",
+		"**/*.spec.ts"
+	]
+}

@@ -1,0 +1,66 @@
+/* cfb-editor (C) 2017-present  SheetJS -- http://sheetjs.com */
+.ToolBar {
+	height: 55px;
+	line-height: 55px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 0px 20px;
+/*	display: flex;
+  position: relative;
+	justify-content: space-between;
+	align-items: center;
+	flex: 0 0 55px;
+	box-sizing: border-box;
+	border-bottom: 1px solid #000000;
+	width: 100%;*/
+}
+
+.ToolBar {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.Logo {
+	vertical-align: middle;
+}
+
+.TitleIcons {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.TitleIcons > div {
+	padding: 0px 10px;
+}
+
+.TitleFile {
+	font-size: 18px;
+}
+
+.TitleName {
+	font-size: 18px;
+	font-weight: bold;
+	display: flex;
+	justify-content: space-between;
+}
+
+.AlignLeft {
+	float:left;
+}
+
+.AlignRight {
+	float:right;
+}
+
+.AlignCenter {
+	margin: 0 auto;
+}
+
+a { color: #0000EE; }
+
+.Spinner {
+	height: 30px;
+}

@@ -1,0 +1,13 @@
+/* cfb-editor (C) 2017-present  SheetJS -- http://sheetjs.com */
+.conpainer {
+	overflow-x: hidden;
+	overflow-y: auto;
+	height: 100%;
+	padding: 0px 20px;
+}
+
+.flexrow {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
