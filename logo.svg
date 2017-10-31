@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+	<defs>
+		<clipPath id="grid"><polygon points="0,0 0,1024 1024,1024 1024,780"/></clipPath>
+		<clipPath id="bars"><polygon points="0,0 1024,0 1024,780"/></clipPath>
+	</defs>
+	<polygon fill="#ffffff" points="0,0 0,1024 1024,1024 1024,0"/>
+	<polygon fill="#63deab" stroke="#ffffff" stroke-width="10" points="0,0 0,1024 1024,1024 1024,780"/>
+	<g clip-path="url(#bars)">
+		<rect x="288" y="160" width="192" height="1000" fill="#a2c5f0" stroke="#ffffff" stroke-width="10" />
+		<rect x="544" y="288" width="192" height="1000" fill="#ffbdbd" stroke="#ffffff" stroke-width="10" />
+		<rect x="800" y="64"  width="192" height="1000" fill="#a2c5f0" stroke="#ffffff" stroke-width="10" />
+	</g>
+	<g clip-path="url(#grid)">
+		<line x1="0" y1="128" x2="1024" y2="128" stroke="#ffffff" stroke-width="10" />
+		<line x1="0" y1="256" x2="1024" y2="256" stroke="#ffffff" stroke-width="10" />
+		<line x1="0" y1="384" x2="1024" y2="384" stroke="#ffffff" stroke-width="10" />
+		<line x1="0" y1="512" x2="1024" y2="512" stroke="#ffffff" stroke-width="10" />
+		<line x1="0" y1="640" x2="1024" y2="640" stroke="#ffffff" stroke-width="10" />
+		<line x1="0" y1="768" x2="1024" y2="768" stroke="#ffffff" stroke-width="10" />
+		<line x1="0" y1="896" x2="1024" y2="896" stroke="#ffffff" stroke-width="10" />
+		<line x1="256" y1="0" x2="256" y2="1024" stroke="#ffffff" stroke-width="10" />
+		<line x1="512" y1="0" x2="512" y2="1024" stroke="#ffffff" stroke-width="10" />
+		<line x1="768" y1="0" x2="768" y2="1024" stroke="#ffffff" stroke-width="10" />
+	</g>
+	<line x1="0" y1="0" x2="1024" y2="780" stroke="#ffffff" stroke-width="10" />
+</svg>
