@@ -1,6 +1,6 @@
 {
   "name": "cfb-editor",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "CFB / ZIP editor",
   "private": true,
   "homepage": "https://sheetjs.com/cfb-editor",
@@ -13,7 +13,7 @@
     "test:watch": "nwb test-react --server"
   },
   "dependencies": {
-    "cfb": "^1.1.1",
+    "cfb": "^1.1.4",
     "crc-32": "^1.2.0",
     "file-saver": "^1.3.3",
     "printj": "^1.1.2",
@@ -31,7 +31,7 @@
     "sweetalert": "^2.0.8"
   },
   "devDependencies": {
-    "nwb": "0.19.x"
+    "nwb": "0.23.x"
   },
   "author": "sheetjs",
   "license": "Apache-2.0",
