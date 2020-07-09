@@ -1,5 +1,5 @@
 # cfb-editor
 
-Archive (ZIP/CFB) Editor
+Archive (ZIP/CFB/MAD) Editor
 
-See <https://sheetjs.com/cfb-editor/> for a live instance
+See <https://oss.sheetjs.com/cfb-editor/> for a live instance

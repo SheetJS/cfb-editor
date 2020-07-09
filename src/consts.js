@@ -6,6 +6,7 @@ export const SheetJSFT = [
 	"application/zip",
 	"application/octet-stream"
 ].join(",") + [
+	"mht", "mhtml",
 	"zip", "xlsx", "xlsb", "xlsm", "ods",
 	"cfb", "xls", "qpw", "wb3", "ppt", "doc"
 ].map(function(x) { return "." + x; }).join(",");

@@ -1,5 +1,4 @@
 /* cfb-editor (C) 2017-present  SheetJS -- http://sheetjs.com */
-/* global Uint8Array */
 import { sprintf, vsprintf } from 'printj';
 
 const X = "%02hhx", Y = X + X + " ";

@@ -52,6 +52,8 @@ class FileView extends PureComponent {
 			if(!props.mode || props.mode == "full") {
 				const hdr = store.getContentSliceByEntry(FI,0,16);
 				if(hdr[0] == 0xFF && hdr[1] == 0xD8 && hdr[2] == 0xFF) show_link = "imag";
+				if(hdr[0] == 0x89 && hdr[1] == 0x50 && hdr[2] == 0x4E) show_link = "imag";
+				if(hdr[0] == 0x47 && hdr[1] == 0x49 && hdr[2] == 0x46 && hdr[3] == 0x38) show_link = "imag";
 			}
 
 			const show_imag = this.props.mode == "imag", I = show_imag ? "data:image/jpeg;base64," + btoa(store.getTextByEntry(FI)) : "";

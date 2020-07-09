@@ -36,6 +36,7 @@ export default easyStore({
 		this.loading = true;
 		setTimeout(() => {try {
 			switch(bstr.slice(0,4)) {
+				case "MIME":
 				case "\xD0\xCF\x11\xE0": this.type = "CFB"; this.file = CFB.read(bstr, {type: "binary"}); break;
 				case "PK\x03\x04": case "PK\x05\x06": this.type = "ZIP"; this.file = new JSZIP(bstr, {base64: false}); break;
 				default: throw new Error(`Invalid file (magic ${bstr.slice(0,4).split("").map(x => x.charCodeAt(0).toString(16).padStart(2,"0"))})`);
@@ -103,7 +104,8 @@ export default easyStore({
 		setTimeout(() => {try {
 		this.dirty = false;
 		let o;
-		if(this.isCFB()) o = SaveBString(CFB.write(this.file, {type:"binary"}), this.fname || "SheetJS.cfb");
+		var fType = /\.mht(?:ml)?$/.test(this.fname||"") ? "mad" : "";
+		if(this.isCFB()) o = SaveBString(CFB.write(this.file, {type:"binary", fileType: fType}), this.fname || "SheetJS.cfb");
 		if(this.isZIP()) o = SaveBString(this.file.generate({type:"string", compression:"DEFLATE"}), this.fname || "SheetJS.zip");
 		this.loading = false;
 		return o;
