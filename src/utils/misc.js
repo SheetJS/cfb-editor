@@ -11,7 +11,7 @@ export const line = ([x,d]) => {
 	return vsprintf("%04x: " + FMT[d.length], [x, ...d, ...d.map(x => String.fromCharCode(x).replace(/[^\x20-\x7E]/g,"."))]);
 };
 
-export const fix_string = (x) => x.replace(/[\u0000-\u001f]/, ($$) => sprintf("\\u%04X", $$.charCodeAt(0)));
+export const fix_string = (x) => x.replace(/[\u0000-\u001f]/g, ($$) => sprintf("\\u%04X", $$.charCodeAt(0)));
 
 export const unfix_string = (x) => x.replace(/\\u(\d{4})/g, ($$, $1) => String.fromCharCode(parseInt($1, 16)));
 
